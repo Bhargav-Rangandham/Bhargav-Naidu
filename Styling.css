@@ -51,13 +51,13 @@ html::-webkit-scrollbar-thumb {
 body {
 	background: #111;
 	overflow: hidden;
-	padding: 30rem;
+	padding: 0rem;
 
 }
 
 section {
 	min-height: 100%;
-	padding: 1rem;
+	padding: 5rem;
 }
 
 .btn {
@@ -140,7 +140,7 @@ header .user .post{
 
 header .navbar {
  
- 	width: 100%;
+ 	width: 70%;
 
 }
 
@@ -150,7 +150,7 @@ header .navbar ui {
 }
 
 header .navbar ui li a {
-	 display: block; padding: 1.5rem;
+	 display: block; padding: 1rem;
 	 margin: 1.5rem 0;
 	 background: #333;
 	 color: #fff;
@@ -162,6 +162,20 @@ header .navbar ui li a {
 header .navbar ui li a:hover {
 	background: var(--yellow);
 }
+
+header .follow a {
+
+	font-size: 2rem;
+	color: #fff;
+	padding-top: 4rem;
+	margin: 0 .8rem;
+}
+
+header .follow a:hover {
+
+	color: var(--yellow);
+}
+
 
  #menu {
  	position: fixed;
@@ -180,7 +194,7 @@ header .navbar ui li a:hover {
  	display: flex;
  	justify-content: center;
  	flex-flow: column;
- 	padding: 0 7rem;
+ 	padding: 20rem 36rem;
 
  }
 
@@ -207,7 +221,7 @@ header .navbar ui li a:hover {
 
  	font-size: 2rem;
  	color: #fff;
- 	padding: 1rem 0;
+ 	padding: 0;
  	
  }
 
@@ -216,14 +230,14 @@ header .navbar ui li a:hover {
  	align-items: center;
  	justify-content: center;
  	flex-wrap: wrap;
- 	padding: 0rem 1rem;
+ 	padding: 6rem 5rem;
  }
 
 .about .row .info {
 
-	flex: 1 1 50rem;
-	padding: 1rem 1rem;
-	padding-left: 3rem;
+	flex: 2 2 25rem;
+	padding: 4rem 20rem;
+	padding-left: 25rem;
 
 }
 
@@ -242,7 +256,7 @@ header .navbar ui li a:hover {
 
 .about .row .counter {
 
-	flex: 1 1 45rem;
+	flex: 2 2 45rem;
 	display: flex;
  	justify-content: center;
  	flex-wrap: wrap;
@@ -274,53 +288,53 @@ header .navbar ui li a:hover {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 2rem 2rem;
-	padding-left: 10rem;
+	padding: 1rem 1rem;
+	padding-left: 33rem;
 
 }
 
 .education .box-container .box {
 	width: 20rem;
-	margin: 2rem 1rem;
+	margin: 1rem 1rem;
 	padding-left: 3rem;
-	border-left: .5rem solid #fff;
+	border-left: .3rem solid #fff;
 	position: relative;
 
 }
 
 .education .box-container .box span {
-	font-size: 3rem;
+	font-size: 2.2rem;
 	background: #222;
 	color:#fff;
-	border-radius: 4rem;
-	padding: 1rem 2rem;
+	border-radius: 3rem;
+	padding: 1rem 1rem;
 
 }
 
 .education .box-container .box h3 {
 	font-size: 2rem;
 	color: #fff;
-	padding-top: 1.5rem;
+	padding-top: 0rem;
 
 }
 
 
 .education .box-container .box p {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	color: #fff;
-	padding: 1rem 0rem;
+	padding: .5rem 0rem;
 	
 }
 
 
 .education .box-container .box i {
 	position: absolute;
-	top: 0rem;left: -2.5rem;
-	height: 5rem;width: 5rem;
+	top: 0rem;left: -2rem;
+	height: 4rem;width: 4rem;
 	border-radius: 60%;
-	line-height: 4rem;
+	line-height: 3.5rem;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #fff;
 	background: var(--yellow);
 	
@@ -337,7 +351,7 @@ header .navbar ui li a:hover {
 .contact .row .content {
 
 	flex: 1 1 30rem;
-	padding: 4rem;
+	padding: 31rem;
 	padding-bottom: 0;
 
 }
@@ -366,7 +380,7 @@ header .navbar ui li a:hover {
 }
 
 .contact .row form .message {
-	height: 17rem;
+	height: 15rem;
 	resize: none;
 
 }
@@ -383,12 +397,12 @@ header .navbar ui li a:hover {
 	align-items: center;
 	font-size: 2rem;
 	color: #eee;
-	padding: 0.5rem 0;
+	padding: 0rem 0rem;
 	font-weight: normal;
 }
 
 .contact .row .content .info h3 i {
-	padding-right: 2rem;
+	padding-right: 1.5rem;
 	color: var(--yellow);
 }
 
@@ -432,13 +446,13 @@ header .navbar ui li a:hover {
 	}
 
 	.home{
-		padding: 1rem;
+		padding: 1.5rem;
 	}
 }
 
 @media (max-width: 991px) {
 	header {
-		left: -120%;
+		left: -70%;
 	}
 
 	#menu {
@@ -470,7 +484,7 @@ header .navbar ui li a:hover {
 	}
 	
 	.heading {
-		margin: 0 3rem;
+		margin: 1rem 1rem;
 
 	}
 
@@ -484,7 +498,7 @@ header .navbar ui li a:hover {
 	}
 
 	.contact .row form {
-		margin: 3rem 0;
+		margin: 3rem 1rem;
 
 	}
 }
