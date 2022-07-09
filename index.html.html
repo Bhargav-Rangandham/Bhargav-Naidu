@@ -10,21 +10,27 @@
 
    <!-- Font Style -->
    
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <link rel="stylesheet" href="Styling.css" >
+   <link rel="stylesheet" href="./Styling.css" >
+
+   <!-- Jquery cdn link-->
+
+         
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         
+   <script src="script.js"></script>
 
  
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script src="js/javascript.js"></script>
-
 </head>  
 
      <body>
 
       <!--Header Section Start-->
 
+
         <header>
+              
                <div class="user">                  
                   <img src="R:\WorkSpace\WebPage_Mine\Pictures\profilepic.jpg" alt="">
                   <h3 class="name">Bhargav Ranganadham</h3>
@@ -36,7 +42,8 @@
                   <ui>
                      <li> <a href="#home">Home </a></li>
                      <li> <a href="#about">About</a></li>
-                     <li> <a href="#education">Education</a></li>
+                     <li> <a href="#experience">Experience</a></li>
+                   <li> <a href="#skills">Skills</a></li>
                      <li> <a href="#contact">Contact</a></li>
                   </ui>
                </nav>
@@ -44,18 +51,17 @@
                <div class="follow">
 
                   <a href="#about" class="fab fa-facebook"></a>
-                  <a href="#education" class="fab fa-instagram"></a>
+                  <a href="#home" class="fab fa-instagram"></a>
                   <a href="#contact" class="fab fa-linkedin"></a>
                   
                </div>
 
+          </header>
 
-      </header>
 
         <!-- Header Section Ends -->
 
         <div id="menu" class="fas fa-bars"></div>
-
 
         <!-- Home Section starts -->
 
@@ -63,7 +69,7 @@
          
          <h3>Hi There !</h3>
          <h1> I'm <span> Bhargav Ranganadham</span></h1>
-         <p>Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine technology,</p>  
+         <p>Google LLC is an American multinational technology company that focuses on artificial intelligence, search engine technology</p>  
 
          <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
 
@@ -86,7 +92,7 @@
                <h3><span>Designation: </span> Software Engineer</h3>
                <h3><span>Langugage: </span> English, Telugu</h3>
 
-               <a href="#home"><button class="btn"> Download CV <i class="fas fa-download"></i></button></a>
+               <a href="./Bhargav's CV.docx" download ="Bhargav's CV"><button class="btn"> Download CV <i class="fas fa-download"></i></button></a>
                
             </div>
             
@@ -122,31 +128,39 @@
 
         <!-- About Section Ends -->
 
-        <!-- Eductation Section starts -->
+        <!-- experience Section starts -->
 
-        <section class="education" id="education">
+        <section class="experience" id="experience">
          
-          <h1 class="heading">My <span>Education</span></h1>  
+          <h1 class="heading">My <span>Experience</span></h1>  
 
           <div class="box-container">
 
             <div class="box">
+                <div class="content">
+                
                 <i class="fas fa-graduation-cap"></i>
                 <span>2018</span>
                 <h3>Quality Analyst</h3>
                 <p>Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to insure that the product delivered to customer meet with the contractual and other agreed upon performance</p>
-
-             </div>
+                
+                </div>
+            </div>
 
              <div class="box">
+               <div class="content">
+
                <i class="fas fa-graduation-cap"></i>
                <span>2019</span>
                <h3>Quality Analyst</h3>
                <p>Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to insure that the product delivered to customer meet with the contractual and other agreed upon performance</p>
 
             </div>
+            </div>
 
             <div class="box">
+
+               <div class="content">
                <i class="fas fa-graduation-cap"></i>
                <span>2020</span>
                <h3>Quality Analyst</h3>
@@ -154,27 +168,32 @@
 
             </div>
 
+            </div>
+
             <div class="box">
+
+               <div class="content">
                <i class="fas fa-graduation-cap"></i>
                <span>2021</span>
                <h3>Quality Analyst</h3>
                <p>Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to insure that the product delivered to customer meet with the contractual and other agreed upon performance</p>
 
             </div>
-
-            <div class="box">
-               <i class="fas fa-graduation-cap"></i>
-               <span>2022</span>
-               <h3>Quality Analyst</h3>
-               <p>Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to insure that the product delivered to customer meet with the contractual and other agreed upon performance</p>
-
             </div>
 
+            
          </div>
 
         </section>
 
         <!-- Eductation Section Ends -->
+
+        <!-- Skills Section starts-->
+
+
+
+
+        <!-- Skills Section starts-->
 
          <!-- Contact Section Starts -->
 
@@ -217,14 +236,10 @@
          <!-- Scroll top button-->
 
          <a href="#home" class="top">
-             <img src="Home_BG_image.jpg">
+             <img src="TopArrow.png" alt="">
+         </a>
 
-         <!-- Jquery cdn link-->
-
-         
-         
-
-         
+                
          </div>
 
    </body>

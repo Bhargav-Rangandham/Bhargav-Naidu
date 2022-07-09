@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,300&display=swap');
 
+*{
+	margin: 0;
+	padding: 0;
+}
 
 :root {
 	--yellow:#f9ca24;
@@ -16,7 +20,7 @@
 
 }
 
-.::selection {
+*::selection {
 
 	background: var(--yellow);
 
@@ -25,14 +29,15 @@
 }
 
 html {
-	font-size: 60%;
-	overflow: hidden;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
+
 
 html::-webkit-scrollbar{
 
-	width: 2rem;
-
+	width: 10px;
 }
 
 html::-webkit-scrollbar-track {
@@ -48,16 +53,19 @@ html::-webkit-scrollbar-thumb {
 
 }
 
+
 body {
 	background: #111;
-	overflow: hidden;
-	padding: 0rem;
+	overflow-x: hidden ;
+	justify-content: center;
+	
 
 }
 
 section {
-	min-height: 100%;
-	padding: 5rem;
+	width: 100%;
+	height: 100vh;
+	
 }
 
 .btn {
@@ -65,13 +73,14 @@ section {
 	background: #333;
 	color: #fff;
 	cursor: pointer;
-	margin-top: .5rem;
+	margin-top: 5rem;
 	font-size: 2rem;
 	border-radius: 4rem;
+
 }
 
-.btn i {
-	padding: 0 .4rem;
+.btn i{
+	padding: 0 .2rem;
 	font-size: 1.5rem;
 }
 
@@ -83,7 +92,7 @@ section {
 
 .heading {
  	text-align: center;
- 	margin: 0 6rem;
+ 	margin:0 4rem;
  	font-size: 4rem;
  	padding: 1rem;
  	border-bottom: .1rem solid #fff4;
@@ -95,19 +104,19 @@ section {
  }
 
 
-
 header {
 	position: fixed;
 	top: 0; left: 0;
 	z-index: 1000;
 	height: 100%;
-	width: 35rem;
+	width: 34rem;
 	background: #1a1a1a;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-flow: column;
 	text-align: center;
+	padding: 0;
 
 }
 
@@ -120,6 +129,7 @@ header .user img{
 	object-fit: cover;
 	margin-bottom: 1rem;
 	bottom: .7rem solid var(--yellow);
+	padding-top: 0;
 
 
 }
@@ -128,6 +138,7 @@ header .user .name{
 
 	font-size: 3rem;
 	color: #fff;
+	
 
 }
 
@@ -135,18 +146,18 @@ header .user .post{
 
 	font-size: 2rem;
 	color: #eee;
+	
 
 }
 
 header .navbar {
  
- 	width: 70%;
-
+ 	width: 75%;
 }
 
 header .navbar ui {
 	 list-style: none;
-	 padding: 2rem 3 rem;
+	 padding: 1rem 3rem;
 }
 
 header .navbar ui li a {
@@ -167,7 +178,7 @@ header .follow a {
 
 	font-size: 2rem;
 	color: #fff;
-	padding-top: 4rem;
+	padding-top: 5rem;
 	margin: 0 .8rem;
 }
 
@@ -189,25 +200,29 @@ header .follow a:hover {
  	display: none ;
 
  }
+ 
 
  .home {
  	display: flex;
- 	justify-content: center;
  	flex-flow: column;
- 	padding: 20rem 36rem;
-
+ 	padding: 30rem 38rem;
+ 	
+	
  }
 
  .home h3{
 
  	font-size: 2.5rem;
  	color: #fff;
+ 	padding: 0rem;
+ 	padding-bottom: 2rem;
 
 
  }
 
  .home h1{
-
+ 	padding: 0;
+ 	padding-bottom: 2rem;
  	font-size: 5rem;
  	color: #fff;
  	
@@ -230,14 +245,14 @@ header .follow a:hover {
  	align-items: center;
  	justify-content: center;
  	flex-wrap: wrap;
- 	padding: 6rem 5rem;
+ 	padding:1rem 0;
  }
 
 .about .row .info {
 
-	flex: 2 2 25rem;
-	padding: 4rem 20rem;
-	padding-left: 25rem;
+	flex: 1 1 48rem;
+	padding: 2rem 1rem;
+	padding-left: 6rem;
 
 }
 
@@ -250,13 +265,13 @@ header .follow a:hover {
 
 .about .row .info h3 span {
 	color: #eee;
-	padding:0 1rem; 
+	padding:0 .5rem; 
 	
 }
 
 .about .row .counter {
 
-	flex: 2 2 45rem;
+	flex: 1 1 48rem;
 	display: flex;
  	justify-content: center;
  	flex-wrap: wrap;
@@ -264,7 +279,7 @@ header .follow a:hover {
 }
 
 .about .row .counter .box {
-	width: 15rem;
+	width: 20rem;
 	background: #222;
 	text-align: center;
 	padding: 2rem;
@@ -280,56 +295,76 @@ header .follow a:hover {
 
 .about .row .counter .box h3 {
 	font-size: 2rem;
-	color: var(--yellow);
+	color: #fff;
 }
 
-.education .box-container {
+.experience .box-container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 1rem 1rem;
-	padding-left: 33rem;
-
-}
-
-.education .box-container .box {
-	width: 20rem;
-	margin: 1rem 1rem;
+	gap: 1.5rem;
+	padding: 1rem 0;
 	padding-left: 3rem;
+
+}
+
+.experience .box-container .box {
+	width: 27rem;
+	margin:4rem 1rem;
+	padding-left: 4rem;
 	border-left: .3rem solid #fff;
-	position: relative;
+	position: relative ;
+
+	
+}
+
+.experience .box-container .box::before {
+	content: '';
+	position: absolute;
+	top: 0; left: -1rem;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background: var(--main-color);
 
 }
 
-.education .box-container .box span {
-	font-size: 2.2rem;
+.experience .box-container .box .content{
 	background: #222;
+	padding: 1.5rem;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	border-radius: .5rem;
+}
+
+.experience .box-container .box .content span {
+	font-size: 2.2rem;
+	background:var(--yellow);
 	color:#fff;
-	border-radius: 3rem;
-	padding: 1rem 1rem;
+	border-radius: 30rem;
+	padding: .7rem 1.5rem;
 
 }
 
-.education .box-container .box h3 {
+.experience .box-container .box h3 {
 	font-size: 2rem;
 	color: #fff;
-	padding-top: 0rem;
+	padding-top: 1.5rem;
 
 }
 
 
-.education .box-container .box p {
+.experience .box-container .box p {
 	font-size: 1.7rem;
-	color: #fff;
-	padding: .5rem 0rem;
+	color: #eee;
+	padding: 1rem 0;
 	
 }
 
 
-.education .box-container .box i {
+.experience .box-container .box i {
 	position: absolute;
-	top: 0rem;left: -2rem;
+	top: -1.5rem;left: -2rem;
 	height: 4rem;width: 4rem;
 	border-radius: 60%;
 	line-height: 3.5rem;
@@ -351,25 +386,25 @@ header .follow a:hover {
 .contact .row .content {
 
 	flex: 1 1 30rem;
-	padding: 31rem;
+	padding: 4rem;
 	padding-bottom: 0;
 
 }
 
 .contact .row form {
-	flex: 1 1 30rem;
+	flex: 1 1 45rem;
 	padding: 2rem;
 	margin: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 
 }
 
 .contact .row form .box {
-	padding: 1rem;
-	margin: 2rem 0;
+	padding: 1.5rem;
+	margin: 1rem 0;
 	background: #3333;
 	color: #fff;
-	text-transform: none;
+	text-transform: none;	
 	font-size: 2rem;
 	width: 100%;
 }
@@ -397,7 +432,7 @@ header .follow a:hover {
 	align-items: center;
 	font-size: 2rem;
 	color: #eee;
-	padding: 0rem 0rem;
+	padding: 1rem 0;
 	font-weight: normal;
 }
 
@@ -446,13 +481,13 @@ header .follow a:hover {
 	}
 
 	.home{
-		padding: 1.5rem;
+		padding: 1rem 4rem;
 	}
 }
 
 @media (max-width: 991px) {
 	header {
-		left: -70%;
+		left: -100%;
 	}
 
 	#menu {
@@ -480,11 +515,11 @@ header .follow a:hover {
 
 @media (max-width: 400px) {
 	header {
-		width: 100vw;
+		width: 100%	;
 	}
 	
 	.heading {
-		margin: 1rem 1rem;
+		margin:0 3rem;
 
 	}
 
@@ -498,7 +533,7 @@ header .follow a:hover {
 	}
 
 	.contact .row form {
-		margin: 3rem 1rem;
+		margin: 3rem 0;
 
 	}
 }

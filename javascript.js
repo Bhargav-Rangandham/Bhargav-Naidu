@@ -1,24 +1,24 @@
 
-let menu = document.queryselector('menu-bars');
+let menu = document.queryselector('menu');
 let header = document.queryselector('header');
 
 
 menu.onclick = ()=> {
-	menu.classList.toggle('fa-times');
-	header.classList.toggle('active');
+	menu.classList.toggleClass('fa-times');
+	header.classList.toggleClass('active');
 
 }
 
 window.onScroll = ()=> {
-	window.classList.remove('fa-times');
-	window.classList.remove('active');
+	window.classList.removeClass('fa-times');
+	window.classList.removeClass('active');
 
 }
 
 
 $(document).ready(function(){
 
-	$('#menu-abrs').click(function() {
+	$('#menu').click(function() {
 	$(this).toggleclass('fa-times');
 	$('header').toggleclass('toggle'); 
 

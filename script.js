@@ -1,42 +1,41 @@
 $(document).ready(function(){
 
 	$('#menu').click(function() {
-	$(this).toggleclass('fa-times');
-	$('header').toggleclass('toggle'); 
 
-});
+		$(this).toggleClass('fa-times');
+		$('header').toggleClass('toggle'); 
 
+	});
 
-$('window').on('scroll load', function() {
+	$(window).on('scroll load', function() {
 
-	$('#menu').removeclass('fa-times');
-	$('header').removeclass('toggle');
+		$('#menu').removeClass('fa-times');
+		$('header').removeClass('toggle');
 
-	if($(window).scrollTop()>0) {
+		if($(window).scrollTop()>0) {
 			$('.top').show();
 
 		} else {
-			$('.top').show();
+			$('.top').hide();
 		}
 
-});
+	});
 
+	//smooth scrolling 
 
-//smooth scrolling 
+	$('a[href*="#"]').on('click',function(e) {
 
+		e.preventDefault();
 
-$('a[href*="#"]').on('click',function(e) {
+		$('html, body').animate({
 
-	e.preventDefault();
-
-	$('html, body').animate({
-
-		scrollTop : $($(this).attr('href')).top,
-		},
-		500,
-		'linear',
-		);
+			scrollTop : $($(this).attr('href')).offset().top,
+			},
+			500,
+			'linear',
+			);
 
 	});
+
 
 });
