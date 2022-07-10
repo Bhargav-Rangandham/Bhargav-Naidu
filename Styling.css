@@ -6,7 +6,15 @@
 }
 
 :root {
-	--yellow:#f9ca24;
+	--bg-black-900:  #f2f2fc;
+	--bg-black-100:  #fdf9ff;
+	--bg-black-50:  #e8dfec;
+	--text-black-900:  #302e4d;
+	--text-black-700:  #504e70;
+}
+
+::before,::after {
+box-sizing: border-box;
 }
 
 *{
@@ -22,7 +30,7 @@
 
 *::selection {
 
-	background: var(--yellow);
+	background: red;
 
 	color: #333;
 
@@ -49,7 +57,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
 
-	background: var(--yellow);
+	background: red;
 
 }
 
@@ -64,7 +72,6 @@ body {
 section {
 	padding: 1rem;
 	min-height: 100vh;
-	
 }
 
 .btn {
@@ -84,7 +91,7 @@ section {
 }
 
 .btn:hover{
-	background: var(--yellow);
+	background: red;
 
 }
 
@@ -99,7 +106,7 @@ section {
  }
 
  .heading span {
- 	color: var(--yellow);
+ 	color: red;
  }
 
 
@@ -125,7 +132,7 @@ header .user img{
 	border-radius: 70%;
 	object-fit: cover;
 	margin-bottom: 1rem;
-	border: .7rem solid var(--yellow);
+	border: .7rem solid red;
 	
 }
 
@@ -164,7 +171,7 @@ header .navbar ui li a {
 	}
 
 header .navbar ui li a:hover {
-	background: var(--yellow);
+	background: red;
 }
 
 header .follow a {
@@ -177,7 +184,7 @@ header .follow a {
 
 header .follow a:hover {
 
-	color: var(--yellow);
+	color: red;
 }
 
 
@@ -221,7 +228,7 @@ header .follow a:hover {
  }
 
  .home h1 span {
- 	color: var(--yellow);
+ 	color: red;
  }
 
 .home p{
@@ -250,7 +257,7 @@ header .follow a:hover {
 
 .about .row .info h3 {
 	font-size: 2rem;
-	color: var(--yellow);
+	color: red;
 	padding: 1rem 0rem; 
 	font-weight: normal;
 }
@@ -279,7 +286,7 @@ header .follow a:hover {
 
 .about .row .counter .box span {
 	font-size: 4rem;
-	color: var(--yellow);
+	color: red;
 }
 
 
@@ -328,7 +335,7 @@ header .follow a:hover {
 
 .experience .box-container .box .content span {
 	font-size: 1.3rem;
-	background:var(--yellow);
+	background:red;
 	color:#fff;
 	border-radius: 30rem;
 	padding: .5rem 2.5rem;
@@ -357,7 +364,7 @@ header .follow a:hover {
 	text-align: center;
 	font-size: 2rem;
 	color: #fff;
-	background: var(--yellow);
+	background: red;
 	
 }
 
@@ -421,7 +428,7 @@ header .follow a:hover {
 
 .contact .row .content .info h3 i {
 	padding-right: 1.5rem;
-	color: var(--yellow);
+	color: red;
 }
 
 .top{
