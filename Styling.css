@@ -301,7 +301,7 @@ header .follow a:hover {
 .experience .box-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	padding-left: 7rem;
 	padding-right: 6rem;
@@ -378,9 +378,9 @@ header .follow a:hover {
 	flex-wrap: wrap;
 	margin: 1rem 0;
 	padding: 6;
-	padding-left: 6rem;
+	padding-left: 8rem;
 	padding-right: 8rem;
-	gap: 1.5rem;
+	
 }
 
 .row .skills {
@@ -388,7 +388,7 @@ header .follow a:hover {
 }
 
 .row .skills .progress{
-	padding: 1rem 0;
+	padding: .2rem 0;
 
 }
 
@@ -396,7 +396,7 @@ header .follow a:hover {
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem 0;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: #fff;
 	font-weight: 400;
 
@@ -430,14 +430,18 @@ header .follow a:hover {
 }
 
 .row .skills .progress:nth-child(4) .bar span{
-	width: 60%;
-}
-
-.row .skills .progress:nth-child(5) .bar span{
 	width: 75%;
 }
 
+.row .skills .progress:nth-child(5) .bar span{
+	width: 65%;
+}
+
 .row .skills .progress:nth-child(6) .bar span{
+	width: 75%;
+}
+
+.row .skills .progress:nth-child(7) .bar span{
 	width: 50%;
 }
 
@@ -453,18 +457,16 @@ header .follow a:hover {
 
 .contact .row .content {
 	flex: 1 1 40rem;
-	padding-bottom: 0;
 }
 
 .contact .row form {
 	flex: 1 1 45rem;
-	margin: 2rem;
-	margin-bottom: 4rem;
-
+	margin: 3rem;
+	margin-bottom: 3rem;
 }
 
 .contact .row form .box {
-	padding: 1.5rem;
+	padding: 2rem;
 	margin: 1rem 0;
 	background: #3333;
 	color: #fff;

@@ -2,100 +2,80 @@
 <html>
 
 <head>
-  
    <meta charset="utf-8">
    <meta name = "view profile">
-
    <title>Bhargav's Personal Profile Page</title>
 
    <!-- Font Style -->
-   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="stylesheet" href="./Styling.css" >
-
    <!-- Jquery cdn link-->
- 
 </head>  
 
-     <body>
+   <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
          
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-         
-   <script src="script.js"></script>
-
+      <script src="script.js"></script>
 
       <!--Header Section Start-->
-
-
         <header>
-              
-               <div class="user">                  
-                  <img src=".\Pictures\profilepic3.jpg" alt="">
-                  <h3 class="name"><Span>B</Span>hargav <Span>R</Span>anganadham</h3>
-                  <p class="post">Test Automation Engineer</p>
+            
+            <div class="user">                  
+               <img src=".\Pictures\profilepic3.jpg" alt="">
+               <h3 class="name"><Span>B</Span>hargav <Span>R</Span>anganadham</h3>
+               <p class="post">Test Automation Engineer</p>
+            </div>
 
-               </div>
+            <nav class="navbar">
+               <ui>
+                  <li><a href="#home"> <i class="fa fa-home"></i> Home </a></li>
+                  <li><a href="#about"> <i class="fa fa-user"></i> About</a></li>
+                  <li> <a href="#experience"> <i class="fas fa-file"></i> Experience</a></li>
+                  <li> <a href="#techs"> <i class="fa fa-list"></i> Skills</a></li>
+                  <li> <a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+               </ui>
+            </nav>
 
-               <nav class="navbar">
-                  <ui>
-                     <li><a href="#home"> <i class="fa fa-home"></i> Home </a></li>
-                     <li><a href="#about"> <i class="fa fa-user"></i> About</a></li>
-                     <li> <a href="#experience"> <i class="fas fa-file"></i> Experience</a></li>
-                   <li> <a href="#techs"> <i class="fa fa-list"></i> Skills</a></li>
-                     <li> <a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-                  </ui>
-               </nav>
+            <div class="follow">
+               <a href="https://www.facebook.com/bhargavnaidu.ranganatham" class="fab fa-facebook"></a>
+               <a href="#home" class="fab fa-instagram"></a>
+               <a href="https://www.linkedin.com/in/bhargav-naidu-10b427136/" class="fab fa-linkedin"></a>
+            </div>
+         </header>
 
-               <div class="follow">
+      <!-- Header Section Ends -->
 
-                  <a href="#about" class="fab fa-facebook"></a>
-                  <a href="#home" class="fab fa-instagram"></a>
-                  <a href="#https://www.linkedin.com/in/bhargav-naidu-10b427136/" class="fab fa-linkedin"></a>
-                  
-               </div>
+      <div id="menu" class="fas fa-bars"></div>
 
-          </header>
+      <!-- Home Section starts -->
 
-
-        <!-- Header Section Ends -->
-
-        <div id="menu" class="fas fa-bars"></div>
-
-        <!-- Home Section starts -->
-
-        <section class="home" id="home">
+      <section class="home" id="home">
          
-         <h3>Hi There !</h3>
-         <h1> I'm <span> Bhargav Ranganadham</span></h1>
-         <p>High level experience in Manual and Automation testing and producing the qualtiy work.</p>  
+            <h3>Hi There !</h3>
+            <h1> I'm <span> Bhargav Ranganadham</span></h1>
+               <p>High level experience in Manual and Automation testing, producing the qualtiy work.</p>  
+               <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+      </section>
 
-         <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+     <!-- Home Section Ends -->
 
-        </section>
+     <!-- About Section Starts -->
 
-        <!-- Home Section Ends -->
-
-        <!-- About Section Starts -->
-
-        <section class="about" id="about">
+     <section class="about" id="about">
          <h1 class="heading">About <span>Me</span></h1>
 
          <div class="row">
-            
              <div class="info">
-
                <h3><span>Name: </span> Bhargav Ranganadham</h3>
                <h3><span>Age: </span> 27</h3>
                <h3><span>Qualification: </span> B.Tech(EEE)</h3>
                <h3><span>Designation: </span> Software Engineer</h3>
                <h3><span>Langugage: </span> English, Telugu</h3>
-
-               <a href="./Bhargav's CV.docx" download ="Bhargav's CV"><button class="btn"> Download CV <i class="fas fa-download"></i></button></a>
                
+               <a href="./Bhargav's CV.docx" download ="Bhargav's CV"><button class="btn"> Download CV <i class="fas fa-download"></i></button></a>
             </div>
             
             <div class="counter">
-               
                <div class ="box">
                   <span>4+</span>
                   <h3>Years of experience</h3>
@@ -106,70 +86,56 @@
                   <h3>Projects experience</h3>
                </div>
 
-
                <div class ="box">
                   <span>3+</span>
                   <h3>Client projects worked</h3>
                </div>
 
-
                <div class ="box">
                   <span>6+</span>
                   <h3>Expert Skills</h3>
                </div>
-
             </div>
-
          </div>
 
-        </section>
+      </section>
 
         <!-- About Section Ends -->
 
         <!-- experience Section starts -->
 
-        <section class="experience" id="experience">
-         
-          <h1 class="heading">My <span>Experience</span></h1>  
+      <section class="experience" id="experience">
+            <h1 class="heading">My <span>Experience</span></h1>  
 
-          <div class="box-container">
-
+         <div class="box-container">
             <div class="box">
                 <div class="content">
-                
                 <i class="fas fa-graduation-cap"></i>
                 <span>2018-2019</span>
                 <h3>programmer analyst trainee</h3>
-                <p>Worked as a Manual tester in Disocver banking solutions project handling both mobile and web based application testing and completed the project succesfully and launched the mobile application to the customers.</p>
-                
+                <p>Worked as a Manual tester in Disocver banking solutions project handling both mobile and web based application and completed the project succesfully and launched the mobile application to the customers. </p>
                 </div>
             </div>
 
-             <div class="box">
+            <div class="box">
                <div class="content">
-
                <i class="fas fa-graduation-cap"></i>
                <span>2019-2020</span>
                <h3>programmer Analyst</h3>
                <p>Worked as a Manual and Selenium automation tester in Disocver banking solutions project handling web based banking application and led the two member team through the project</p>
-
-            </div>
+               </div>
             </div>
 
             <div class="box">
-
                <div class="content">
                <i class="fas fa-graduation-cap"></i>
                <span>2020-2021</span>
                <h3>Programmer Analyst</h3>
                <p>Worked as Manual and Automation Tester in HealthCare domain project handling Windows and web based pharmaceutical appication which deals customer medical prescriptions.</p>
-
-            </div>
-
+               </div>
             </div>
 
             <div class="box">
-
                <div class="content">
                <i class="fas fa-graduation-cap"></i>
                <span>2021-Present</span>
@@ -178,99 +144,91 @@
                </div>
             </div>   
          </div>
-
       </section>
+
         <!-- Eductation Section Ends -->
 
         <!-- Skills Section starts-->
 
-        <section class="techs" id ="techs">
-          <h1 class="heading">My <span>Skills</span></h1>
-            <div class="row" >
+      <section class="techs" id ="techs">
+         <h1 class="heading">My <span>Skills</span></h1>
+            
+         <div class="row" >
                <div class="skills">
-                  
                   <div class="progress">
-                     <h2> Software Testing Concepts <span>85% </span></h3>
+                     <h2> Software Testing & Concepts <span> 85% </span></h2>
                      <div class="bar"> <span></span> </div>
                   </div>
-
+                  
                   <div class="progress">
-                     <h2> Test Automation <span> 70% </span></h3>
+                     <h2> Test Automation <span> 70% </span></h2>
                       <div class="bar"> <span></span> </div>
                   </div>
 
                   <div class="progress">
-                     <h2> SQL <span> 80% </span></h3>
+                     <h2> SQL <span> 80% </span></h2>
                       <div class="bar"> <span></span> </div>
                   </div>
 
                   <div class="progress">
-                     <h2> API Testing <span> 60% </span></h3>
+                     <h2> HP ALM/Jira & Confluence <span> 75% </span></h2>
                       <div class="bar"> <span></span> </div>
                   </div>
 
                   <div class="progress">
-                     <h2> HTML <span> 75% </span></h3>
+                     <h2> API Testing <span> 65% </span></h2>
                       <div class="bar"> <span></span> </div>
                   </div>
 
                   <div class="progress">
-                     <h2> Java <span> 50% </span></h3>
+                     <h2> HTML <span> 75% </span></h2>
                       <div class="bar"> <span></span> </div>
                   </div>
 
+                  <div class="progress">
+                     <h2> Java <span> 50% </span></h2>
+                      <div class="bar"> <span></span> </div>
+                  </div>
                </div>
             </div>
+         </section>
 
-        </section>
+      <!-- Skills Section Ends-->
 
+      <!-- Contact Section Starts -->
 
-        <!-- Skills Section Ends-->
+      <section class="contact" id="contact">
+         <h1 class="heading">Contact <span>Me</span></h1>
 
-         <!-- Contact Section Starts -->
-
-         <section class="contact" id="contact">
-            
-             <h1 class="heading">Contact <span>Me</span></h1>
-
-             <div class="row">
-
-               <div class="content">
-                  <h3 class="title">Contact Info</h3>
-
+         <div class="row">
+            <div class="content">
+               <h3 class="title">Contact Info</h3>
                   <div class="info">
                      <h3><i class="fas fa-envelope"></i> bhargav.naidu238@gmail.com</h3>
                       <h3><i class="fas fa-phone"></i> +91-8121627232</h3>
                       <h3><i class="fas fa-phone"></i> +91-9533642211</h3>
                       <h3><i class="fas fa-map-marker-alt"></i> Bangalore, India - 524004</h3>
                   </div>
-              
-               </div>
+            </div>
                 
-               <form action="https://formsubmit.co/bhargav.naidu238@email.com" method="post">
-                  <input type="text" placeholder="name" class="box">
-                  <input type="email" placeholder="email" class="box">
-                  <input type="text" placeholder="project" class="box">
-                  <textarea name="" id="" cols="30" rows="20" class="message box" placeholder="message"></textarea>
+            <form action="https://formsubmit.co/bhargav.naidu238@email.com" method="post">
+               <input type="text" placeholder="name" class="box">
+               <input type="email" placeholder="email" class="box">
+               <input type="text" placeholder="project" class="box">
+               <textarea name="" id="" cols="30" rows="20" class="message box" placeholder="message"></textarea>
+               <button type="submit" name="" class="btn">Send<i class="fas fa-paper-plane"></i> </button>
+            </form>
+         </div>
 
-                  <button type="submit" name="" class="btn">Send<i class="fas fa-paper-plane"></i> </button>
+      </section>
 
-               </form>
-
-             </div>
-
-         </section>
-
-         <!-- Contact Section Starts -->
+     <!-- Contact Section Starts -->
         
-         <!-- Scroll top button-->
+     <!-- Scroll top button-->
 
-         <a href="#home" class="top">
-             <img src=".\Pictures\TopArrow.png" alt="">
-         </a>
-                
-      </div>
-
-   </body>
+     <a href="#home" class="top">
+      <img src=".\Pictures\TopArrow.png" alt=""></a>
+   
+   </body>             
 
 </html>
