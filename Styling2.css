@@ -28,6 +28,7 @@ box-sizing: border-box;
 *::selection {
 
 	background: red;
+
 	color: #333;
 
 }
@@ -35,7 +36,7 @@ box-sizing: border-box;
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow-x: scroll;
+	overflow-x: hidden;
 }
 
 
@@ -62,7 +63,6 @@ body {
 	background: #111;
 	overflow-x: hidden ;
 	padding-left: 35rem;
-	height: 100vh;
 	
 }
 
@@ -301,7 +301,7 @@ header .follow a:hover {
 .experience .box-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	padding-left: 7rem;
 	padding-right: 6rem;
@@ -631,6 +631,14 @@ header .follow a:hover {
 	}
 }
 
+@media (max-width: 998px) {
+	
+	html{
+	
+		font-size: 55%;
+	}
+
+}
 
 @media (max-width: 400px) {
 	header {
@@ -658,11 +666,7 @@ header .follow a:hover {
 }
 
 
-@media screen and (max-width: 540px) {
-    body {
-        width: 400px;
-    }
-}
+
 
 
 
