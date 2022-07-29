@@ -301,7 +301,7 @@ header .follow a:hover {
 .experience .box-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	padding-left: 7rem;
 	padding-right: 6rem;
@@ -659,7 +659,7 @@ header .follow a:hover {
 
 
 @media screen and (max-width: 540px) {
-    .view {
+    body {
         width: 400px;
     }
 }
