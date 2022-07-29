@@ -28,7 +28,6 @@ box-sizing: border-box;
 *::selection {
 
 	background: red;
-
 	color: #333;
 
 }
@@ -36,7 +35,7 @@ box-sizing: border-box;
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+	overflow-x: scroll;
 }
 
 
@@ -63,6 +62,7 @@ body {
 	background: #111;
 	overflow-x: hidden ;
 	padding-left: 35rem;
+	height: 100vh;
 	
 }
 
